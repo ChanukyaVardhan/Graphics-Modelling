@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	<title>CS475 Assignment 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.css">
+</head>
+
+<body>
+	<h3 class="text-center"><u>Modelling-Viewing Pipeline : Modelling</u></h3>
+	<div class="container">
+		<h4>The images of the models are as follows: </h4>
+		<div class="col-md-4">
+			<img src="images/car.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">Car</h4>
+		</div>
+		<div class="col-md-4">
+			<img src="images/titanic.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">Titanic</h4>
+		</div>
+		<div class="col-md-4">
+			<img src="images/chair.png" width="350" class="img-responsive img-rounded">
+			<h4 class="text-center">Chair</h4>
+		</div>
+	</div>
+
+	<div class="container">
+		<h4>Features and Instructions:</h4>
+		<ul>
+			<li><h5>Run the Makefile using <code>make</code> command, to get the executable "assign01".</h5></li>
+			<li><h5>Using the command <code>./assign01</code> a window appears where the images can be drawn and loaded.</h5></li>
+			<li><h5>The program starts in modelling mode initially, mode can be changed by pressing "M" (modelling mode) or "I" (inspection mode).</h5></li>
+			<li><h5>In the modelling mode, "left" clicking the mouse will add a point to your model and "shift+left" clicking the mouse will remove the last added point.</h5></li>
+			<li><h5>While modelling to create a triangle "3" points should be clicked. A triangle is formed for every 3 successive clicked points.</h5></li>
+			<li><h5>In the modelling mode, we can change the value of z-plane by pressing "F" and entering the new z-value.</h5></li>
+			<li><h5>The default color value of the point can be changed by pressing "C" key and entering three color values corresponding to "R", "G", "B" respectively (each value must be in [0-1]).</h5></li>
+			<li><h5>In Inspection mode, the "left/right arrows" allows the model to rotate about the Y-axis, the "up/down arrows" allows the model to rotate about the X-axis, and "PgUp/PgDn" allows rotation about the Z-axis</h5></li>
+			<li><h5>The keys "W,S,A,D,Z,X" allow translations along the positive and negative Y, X and Z axis respectively.</h5></li>
+			<li><h5>We can load a partially created model to the current drawing on the window by pressing "L" and continue adding points to it (in the modeling mode), the entire drawing will be a single model.</h5></li>
+			<li><h5>Multiple models can be created at once (upto 10). To draw a new model press "N" key, now you can create a new model or else the entire drawing will be considered as a single model.</h5></li>
+			<li><h5>Pressing "R" moves the centroids of all the models to the origin. Note that the rotations of each model are performed about their own centroid.</h5></li>
+			<li><h5>By pressing "K" we can save the last model (since multiple models are present) and specifying the filename. The points are stored in X,Y,Z,R,G,B format.</h5></li>
+			<li><h5>While loading and saving models specify the complete file name with ".raw" extension.</h5></li>
+			<li><h5>The key "O" helps to nullify all the applied rotations of existing models (for convenience).</h5></li>
+			<li><h5>Each line of the .raw file must be of the format 'X,Y,Z,R,G,B' with the ',' in between the values.</h5></li>
+
+		</ul>
+	</div>
+
+	<div class="container">
+		<h4>References:</h4>
+		<ul>
+			<li><h5>The base code for the assignment is taken directly from the tutorials given. <a href="https://github.com/paragchaudhuri/cs475-tutorials">https://github.com/paragchaudhuri/cs475-tutorials</a></h5></li>
+			<li><h5><a href="https://stackoverflow.com/questions/35261192/how-to-use-glmproject-to-get-the-coordinates-of-a-point-in-world-space">https://stackoverflow.com/questions/35261192/how-to-use-glmproject-to-get-the-coordinates-of-a-point-in-world-space</a> This link is used for understanding about glm::unProject.</h5></li>
+			<li><h5><a href="http://www.glfw.org/docs/latest">http://www.glfw.org/docs/latest</a> This link is used for the specifications of different functions available.</h5></li>
+		</ul>
+	</div>
+</body>
+
+</html>

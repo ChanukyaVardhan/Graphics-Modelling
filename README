@@ -1,0 +1,12 @@
+link to report : https://www.cse.iitb.ac.in/~chanukya/CS475/Assignment%201/Assignment1.html
+
+Two cpp files are submiited:
+
+generate_cylinders.cpp : used for generating cyclinders which are used in titanic.raw.
+
+generate_wheels.cpp : used for generating wheels and windows which are used in car.raw.
+
+html report and images are also present in the submission.
+
+Note:
+Each line of the .raw file must be of the format 'X,Y,Z,R,G,B' with the ',' in between the values.
